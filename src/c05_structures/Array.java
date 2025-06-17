@@ -1,6 +1,6 @@
 package c05_structures;
 
-public class Arrays {
+public class Array {
     public static void main(String[] args) {
 
         // Declaracion y creacion
