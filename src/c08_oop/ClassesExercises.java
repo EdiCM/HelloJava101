@@ -32,7 +32,7 @@ public class ClassesExercises {
         ArrayList<Person> people = new ArrayList<>();
         people.add(new Person("Edith", 21, "12345A"));
         people.add(new Person("Andy", 20, "12345B"));
-        people.add(new Person("Gims", 5, "12345AC"));
+        people.add(new Person("Gims", 5, "12345C"));
         // 10. Crea una clase Product y un método que aplique un descuento sobre su precio.
         Product product1 = new Product("Leche", 30);
         product1.discount();
