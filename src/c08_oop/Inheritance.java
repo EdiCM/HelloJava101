@@ -5,7 +5,7 @@ package c08_oop;
 */
 
 public class Inheritance {
-
+// HERENCIA: "es un"
     public static void main(String[] args) {
 
         // La herencia es heredar/reutilizar atributos y metodos de una clase a otra
