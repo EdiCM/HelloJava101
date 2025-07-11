@@ -5,6 +5,14 @@ public class PolymorphismExercises {
     public static void main(String[] args) {
 
         // 1. Crea una clase Animal con el método makeSound(). Luego crea subclases Dog, Cat y Cow que sobrescriban ese método con sonidos diferentes. Llama al método desde una lista de Animal.
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        Cow cow = new Cow();
+        Animal[] animals = { cat, dog, cow };
+
+        for (Animal animal : animals) {
+            animal.makeSound();
+        }
 
         // 2. Crea una clase Shape con el método calculateArea(). Luego implementa subclases Circle y Rectangle con sus propias fórmulas. Usa una lista de Shape para recorrer e imprimir el área de varias figuras.
 
@@ -25,4 +33,37 @@ public class PolymorphismExercises {
         // 10. Crea una clase Character con método attack(). Luego crea subclases Warrior, Archer, Mage con ataques diferentes. En main, crea un array de Character y llama a attack() para cada uno.
 
     }
+
+    public static class Animal {
+
+        public void makeSound() {
+            System.out.println("Este es un sonido de un animal");
+        }
+    }
+
+    public static class Dog extends Animal {
+
+        @Override
+        public void makeSound() {
+            System.out.println("guauf guauf");
+        }
+    }
+
+    public static class Cat extends Animal {
+
+        @Override
+        public void makeSound() {
+            System.out.println("Meow meow");
+        }
+    }
+
+    public static class Cow extends Animal {
+
+        @Override
+        public void makeSound() {
+            System.out.println("Moo moo");
+        }
+    }
+
+
 }
